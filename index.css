@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: black;
+    /* background-image: url(); */
+    padding: 20px;
+}
+
+.calendar {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+#name, #birthday {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+#submit {
+    display: flex;
+    background-color: transparent;
+    color: black;
+    border: solid 1px;
+    border-radius: 15px;
+    align-self:last baseline;
+    cursor: pointer;
+
+}
