@@ -1,9 +1,28 @@
-let name = document.getElementById('name')
+const tableContainer = document.getElementsByClassName('table')
 
 
-function save() {
- 
-    let name = document.getElementById('name').value;
+const dados = [
+    {
+        name: "joao",
+        date: "01/02/03"
+    }
+]
 
-    return console.log (name)
+window.onload = function() {
+    dados.forEach(dados => addtable(dados))
 }
+
+function addtable (){
+
+    const {name, date} = dados
+    
+    const pName = document.createElement('div')
+    pName.classList.add('personName')
+    tableContainer.appendChild(pName)
+
+    const pDate = document.createElement('div')
+    pDate.classList.add('personDate')
+    tableContainer.appendChild(pDate)
+}
+
+
