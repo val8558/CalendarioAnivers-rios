@@ -5,6 +5,7 @@ let bday;
 let value
 let nameTab = document.getElementById('nombre');
 let bdayDate = document.getElementById('date');
+let pessoas;
 
 
 btn.addEventListener("click", (e) => {
@@ -17,6 +18,10 @@ btn.addEventListener("click", (e) => {
     ;
 
     console.log(value);
+
+    localStorage.setItem('pessoas', JSON.stringify(nome.value, bday.value));
+
+    const pessoas = JSON.parse(localStorage.getItem('pessoas')) || [];
 
     nameTab.innerText= nome.value;
     bdayDate.innerText = bday.value;
