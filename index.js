@@ -1,28 +1,25 @@
-const tableContainer = document.getElementsByClassName('table')
+
+const btn = document.getElementById('submit');
+let nome;
+let bday;
+let value
+let nameTab = document.getElementById('nombre');
+let bdayDate = document.getElementById('date');
 
 
-const dados = [
-    {
-        name: "joao",
-        date: "01/02/03"
-    }
-]
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
 
-window.onload = function() {
-    dados.forEach(dados => addtable(dados))
-}
+    nome = document.getElementById('nome');
+    bday = document.getElementById('bday');
 
-function addtable (){
+    value = [nome.value, bday.value];
+    ;
 
-    const {name, date} = dados
-    
-    const pName = document.createElement('div')
-    pName.classList.add('personName')
-    tableContainer.appendChild(pName)
+    console.log(value);
 
-    const pDate = document.createElement('div')
-    pDate.classList.add('personDate')
-    tableContainer.appendChild(pDate)
-}
+    nameTab.innerText= nome.value;
+    bdayDate.innerText = bday.value;
+})
 
 

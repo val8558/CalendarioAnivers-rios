@@ -19,19 +19,25 @@
         <label for="Name ">
             <span>Nome</span>
             <input type="text" name="name" id="nome" maxlength="120" minlength="6" class="jsField" placeholder="Nome"
-                required>
+            required>
         </label>
 
         <label for="birthday">
             <span>Data do aniversários</span>
-            <input type="date" name="birthday" id="birthday" placeholder="data de nascimento" width="140.2px" required>
+            <input type="date" name="birthday" id="bday" placeholder="data de nascimento" width="140.2px" required>
         </label>
 
-        <button id="submit" onclick="save()" type="submit">Salvar</button>
+        <input id="submit" type="submit" value="submit"></input>
     </form>
 
     <div class="table">
         <h4>Aniversariantes</h4>
+      <div class="content">
+        <p id="nombre"></p>
+        <p id="date"></p>
+
+      </div>
+       
 
     </div>
 
